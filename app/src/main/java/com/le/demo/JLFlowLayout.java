@@ -170,9 +170,6 @@ public class JLFlowLayout extends ViewGroup {
                 lineWidth = 0;// 重置行宽
                 lineViews = new ArrayList<View>();
                 if (mAllViews.size() == 2) {
-//                    if(onFillCallback != null){
-//                        onFillCallback.onFill(i);
-//                    }
                     break;
                 }
             }

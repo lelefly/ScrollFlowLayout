@@ -84,7 +84,6 @@ public class JLHorizontalScrollView extends HorizontalScrollView {
         post(new Runnable() {
             @Override
             public void run() {
-                clearLastPage();
                 mData.clear();
                 if (mContainer != null) {
                     mContainer.removeAllViews();
@@ -107,13 +106,6 @@ public class JLHorizontalScrollView extends HorizontalScrollView {
             }
         });
 
-    }
-
-    private void clearLastPage() {
-        for (int i = 0; i < mJLFlowLayoutList.size(); i++) {
-            mJLFlowLayoutList.get(i).setOnFillCallback(null);
-        }
-        mJLFlowLayoutList.clear();
     }
 
 
