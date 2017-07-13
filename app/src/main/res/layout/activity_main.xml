@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.le.demo.JLHorizontalScrollView
+        android:id="@+id/jhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/jhs">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#48B3E2"
+        android:gravity="center"
+        android:text="data1"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#48B3E2"
+        android:gravity="center"
+        android:text="data2"
+        android:textColor="#fff"
+        android:layout_below="@+id/tv"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
